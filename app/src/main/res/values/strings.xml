@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Simple Boxing Timer</string>
+    <string name="helpText">Thank you for using Simple Boxing Timer!\n\n
+                \t1. Set your round time duration\n
+                \t2. Set your rest time duration\n
+                \t3. Choose your notifications/options\n
+                \t4. Click on the Start button below\n\n
+                Tip: You can listen to music/lock/put your phone away while the timer is running and giving you feedback!</string>
+</resources>

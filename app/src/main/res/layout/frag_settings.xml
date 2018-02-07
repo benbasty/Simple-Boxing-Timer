@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.SettingsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/settings_layout">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_roundtime"
+            android:spinnerMode="dialog"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/tv_roundtimeLabel"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Round Time:"
+            android:id="@+id/tv_roundtimeLabel"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:textSize="15sp"
+            android:layout_margin="5dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_resttime"
+            android:spinnerMode="dialog"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/tv_restTimeLabel"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 seconds remaining (Round Time)"
+            android:id="@+id/checkBox_endRound"
+            android:checked="true"
+            android:layout_below="@+id/tv_notificationLabel"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Half Time"
+            android:id="@+id/checkBox_halfRound"
+            android:checked="false"
+            android:layout_below="@+id/checkBox_intervals"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Every 45 seconds (Round Time)"
+            android:id="@+id/checkBox_intervals"
+            android:checked="false"
+            android:layout_below="@+id/checkBox_restWarning"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rest Time:"
+            android:id="@+id/tv_restTimeLabel"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/spinner_roundtime"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voice Notifications:"
+            android:id="@+id/tv_notificationLabel"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/spinner_resttime"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 seconds remaining (Rest Time)"
+            android:id="@+id/checkBox_restWarning"
+            android:checked="true"
+            android:layout_below="@+id/checkBox_endRound"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Other:"
+            android:id="@+id/textView_other"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/checkBox_halfRound"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibrate"
+            android:id="@+id/checkBox_vibrate"
+            android:checked="true"
+            android:layout_below="@+id/textView_other"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/help_layout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView4"
+            android:text="@string/helpText"
+            android:layout_margin="5dp"/>
+    </RelativeLayout>
+</RelativeLayout>
